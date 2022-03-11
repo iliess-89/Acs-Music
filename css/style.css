@@ -1,0 +1,431 @@
+*,
+::before,
+::after {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+:root {
+    --background-white: rgba(255, 255, 255, .3);
+    ;
+}
+
+body {
+    min-height:100vh ;
+    background: linear-gradient(45deg, rgba(249, 70, 109, 1) 20%, rgba(63, 94, 251, 1) 80%);
+}
+/***********************************************************/
+/*splashscreen*/
+.splash-screen{
+    max-width: 768px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.action>a{
+  
+    padding-top: 50px;
+    color: white;
+letter-spacing: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    opacity: .7;
+    font-size: 1.2rem;
+}
+/*****************************************************************/
+/* PAGE DE CONNEXION &&& inscription*/
+.container {
+    max-width: 768px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container>form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: var(--background-white); */
+    padding: 3rem;
+    margin: auto;
+    border-radius: 20px;
+    border-left: 1px solid var(--background-white);
+    border-top: 1px solid var(--background-white);
+    text-align: center;
+    /* border: 1px solid white ; */
+    background: rgba(53, 52, 52, 0.35);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17.5px );
+    -webkit-backdrop-filter: blur( 17.5px );
+  
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.container>form>h1 {
+    padding-bottom: 1.5rem;
+    color: white;
+    font-weight: 500;
+    opacity: .7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.container>form>input , #inscription, #connecter{
+    
+    margin-bottom: 25px;
+    border-radius: 50px;
+    height: 2rem;
+    text-align: center;
+    width: 200px;
+    background: transparent;
+    border-left: 1px solid var(--background-white);
+    border-top: 1px solid var(--background-white);
+    color: white;
+    padding: .5rem;
+   
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+
+
+}
+
+#inscription, #connecter {
+
+    width: 9.3rem;
+    padding-bottom: 17%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    text-shadow: 2px 2px 4px rgba(214, 22, 22, 0.2);
+    opacity: .7;
+    
+}
+
+.container>form>a {
+    color: white;
+
+    text-decoration: none;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    opacity: .7;
+    font-size: 1.2rem;
+
+}
+.check-pass{
+    margin-bottom: 20px;
+    color: white;
+    display: none;
+  
+}
+.check-pass li{
+    text-align: left;
+    padding-bottom: 5px;
+}
+.invalid{
+    color:rgb(255, 6, 6);
+}
+.valid{
+    color:rgb(10, 209, 10);
+}
+
+/*****************************************************************/
+/*ACCUEIL*/
+/* .accueil{
+     height: 100vh; 
+} */
+.warpper {
+    display: flex;
+    justify-content: center;
+    margin: 30px 9px 50px 9px;
+    background: var(--background-white);
+    border-radius: 15px;
+    border-left: 1px solid var(--background-white);
+    border-top: 1px solid var(--background-white);
+    text-align: center;
+    padding: 25px 35px;
+    position: relative;
+}
+
+.warpper #search,
+.warpper #btn-search {
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    background: transparent;
+    border-left: 1px solid var(--background-white);
+    border-top: 1px solid var(--background-white);
+    color: white;
+    padding: .2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+
+
+}
+
+.warpper #btn-search {
+    width: 2rem;
+    color: black;
+    padding: 0 0 0 8px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    position: absolute;
+    right: 39px;
+    bottom: 25px;
+    border: none;
+    cursor: pointer;
+    opacity: .7;
+    margin-left: 15px;
+    color: white;
+}
+main  h1{
+    text-transform: uppercase;
+    text-align:center;
+    color: white;
+    font-size: 18px;
+        font-weight: 600;
+    opacity: .7;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+       
+}
+main > h1{
+    padding-bottom: 20px;
+}
+.carousel {
+
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+    width: 0;
+}
+
+.panel {
+
+    margin: 0 5px 25px 20px;
+    background: var(--background-white);
+    border-left: 1px solid var(--background-white);
+    border-top: 1px solid var(--background-white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.panel>h2 {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    opacity: .7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    padding: 15px;
+}
+.panel> a> img {
+    cursor: pointer;
+    width: 220px;
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px whitesmoke, 0 2px whitesmoke
+}
+
+.panel>p {
+    font-size: 16px;
+    padding: 15px;
+    text-align: right;
+    font-weight: 400;
+}
+
+.listened-music {
+    margin: 25px 15px 75px 9px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: var(--background-white);
+    border-radius: 15px;
+    border-left: 1px solid var(--background-white);
+    border-top: 1px solid var(--background-white);
+    padding: 25px 2px 0px 9px;
+}
+
+.listened-song {
+    flex: 0 0 25%;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.listened-song>img {
+    border-radius: 50%;
+
+}
+
+.listened-song>p {
+
+    font-size:12px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    opacity: .7;
+}
+.navbar{
+
+    height: 40px;
+    background: rgb(205, 205, 224);
+    box-shadow: inset 0 1px whitesmoke, 0 1px whitesmoke;
+    position: fixed;
+    bottom:0;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    opacity: .7;
+}
+.nav-link {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************************************************/
+/* page details album */
+.details-album{
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+   }
+.details-album> h1{
+    margin-top: 35px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container-album {
+ 
+    display: flex;
+    flex-direction: column;
+       
+        background: var(--background-white);
+    border-left: 1px solid var(--background-white);
+    border-top: 1px solid var(--background-white);
+    border-radius: 15px;
+     margin: 15px 20px 25px 20px;
+}
+
+.container-album>img {
+    border-radius: 30px;
+    
+   padding: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+.container-album>p {
+   text-align: right;
+   padding-bottom: 15px;
+   color: cornsilk;
+   margin-right: 20px;
+}
+
+
+
+.song-liste {
+   
+    display: flex;
+    flex-direction: column;
+    
+
+  
+}
+.song-liste> .piste {
+  display: flex ;
+  justify-content:space-between;
+  margin-bottom: 10px;
+  
+  
+ }
+ .song-liste> .piste> a{
+     text-decoration: none;
+     color:black;
+ }
+ .song-liste> .piste>a> h3{
+     font-size: 12px;
+     margin-left: 35px;
+ }
+     
+   
+ 
+ .song-liste> .piste> span{
+     margin-right: 20px;
+     font-size: 12px;
+ } 
+ 
+
+/*PAGE D’ÉCOUTE D’UNE MUSIQUE*/
+.play{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.name-track{
+    display: flex;
+    justify-content: space-between;
+}
+.name-track> h3, .name-track> p{
+  
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    opacity: .7;
+}
+.name-track> h3{
+    margin-left: 25px;
+    font-size:17px;
+}
+.name-track> p{
+    margin-right: 25px;
+    color:black
+}
+#file{
+    width: 70%;
+
+}
+
+.icon{
+    
+    display: flex;
+    justify-content: center;
+    padding-top:15px;
+    padding-bottom: 20px;
+margin-left: 20px;
+padding-bottom: 25%;
+}
+
+.icon>img{
+    width: 40px;
+    padding-top: 20%;
+    margin-left: 10px;
+}

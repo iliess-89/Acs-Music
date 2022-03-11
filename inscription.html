@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital@1&display=swap" rel="stylesheet"> 
+  
+   <script src="js/script.js" defer></script>
+    <script src="js/user.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1>Inscription</h1>
+        <input type="text"id="name" placeholder="nom">
+        <input type="text" id="mail" placeholder="adresse e-mail">
+        <input type="password" id="password" placeholder="mot de passe">
+        <ul class="check-pass">
+            <li id="minuscule" class="invalid">une minuscule</li>
+            <li id="majuscule" class="invalid">une majuscule</li>
+            <li id="chiffre" class="invalid">un chiffre</li>
+            <li id="special" class="invalid">un caractère spécial</li>
+            <li id="longueur" class="invalid">12 caractères</li>
+        </ul>
+        <button type="button" id="inscription">m'inscrire</button> 
+        <span></span>  
+        <a href="/connexion.html">me connecter</a>
+    </form>
+</div>
+</body>
+</html>
